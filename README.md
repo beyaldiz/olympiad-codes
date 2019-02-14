@@ -1,6 +1,3 @@
-# IOIBOYZ Olympiad Code Sharing Repo
-IOI Study Group 
-
 # IOIBOYZ Members:
 Mehmet Hamza EROL `filename_h.cpp`
 

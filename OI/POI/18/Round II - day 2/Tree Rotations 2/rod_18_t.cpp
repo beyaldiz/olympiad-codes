@@ -7,7 +7,7 @@ typedef pair<int,int> ii;
 
 const int N = 1e6 + 5;
 
-int n,tim,sub[N],l[N],r[N],val[N],fen[N];
+int n,tim,sub[N * 3],l[N * 3],r[N * 3],val[N * 3],fen[N];
 ll ans;
 vector <int> v;
 
@@ -56,7 +56,9 @@ void solve(int cur) {
   solve(l[cur]);
   v.clear();
   del(l[cur]);
-  vector <int> temp = v;
+  vector <int> temp;
+  swap(temp,v);
+  v.clear();
   solve(r[cur]);
   ll res = 0;
   for (auto i : temp)
